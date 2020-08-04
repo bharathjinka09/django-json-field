@@ -7,9 +7,9 @@ import requests
 
 response = requests.get('http://127.0.0.1:8000/')
 
-dogs = response.json()
+contacts = response.json()
 
-for dog in dogs:
-	print(dog)
+for contact in contacts:
+	print(contact['fields']['data'])
 
 ```
